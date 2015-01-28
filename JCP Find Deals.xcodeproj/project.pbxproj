@@ -1,0 +1,654 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4E0BB8621A76EAEE00225BD5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0BB8611A76EAEE00225BD5 /* main.m */; };
+		4E0BB8651A76EAEE00225BD5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0BB8641A76EAEE00225BD5 /* AppDelegate.m */; };
+		4E0BB8681A76EAEE00225BD5 /* JCP_Find_Deals.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4E0BB8661A76EAEE00225BD5 /* JCP_Find_Deals.xcdatamodeld */; };
+		4E0BB86E1A76EAEF00225BD5 /* JCPMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E0BB86C1A76EAEF00225BD5 /* JCPMain.storyboard */; };
+		4E0BB8701A76EAEF00225BD5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E0BB86F1A76EAEF00225BD5 /* Images.xcassets */; };
+		4E0BB8731A76EAEF00225BD5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E0BB8711A76EAEF00225BD5 /* LaunchScreen.xib */; };
+		4E0BB87F1A76EAEF00225BD5 /* JCP_Find_DealsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0BB87E1A76EAEF00225BD5 /* JCP_Find_DealsTests.m */; };
+		4E0BB8991A772AA100225BD5 /* JCPTableImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0BB8971A772AA100225BD5 /* JCPTableImageCell.m */; };
+		4E0BB89E1A772AB900225BD5 /* JCPTableFeatureCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0BB89C1A772AB900225BD5 /* JCPTableFeatureCell.m */; };
+		4E0BB8A21A77477900225BD5 /* JCPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0BB8A11A77477900225BD5 /* JCPViewController.m */; };
+		4E0BB8A61A775DF700225BD5 /* jcpenney_store.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4E0BB8A51A775DF700225BD5 /* jcpenney_store.jpg */; };
+		4E0BB8A91A77BEFE00225BD5 /* JCPTableSetStoreCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0BB8A81A77BEFE00225BD5 /* JCPTableSetStoreCell.m */; };
+		4E3DE26B1A77E480009BE540 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E3DE26A1A77E480009BE540 /* CoreBluetooth.framework */; };
+		4E3DE26D1A77E487009BE540 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E3DE26C1A77E487009BE540 /* CoreLocation.framework */; };
+		4E3DE26F1A77E497009BE540 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E3DE26E1A77E497009BE540 /* CoreData.framework */; };
+		4E3DE2711A77E4A2009BE540 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E3DE2701A77E4A2009BE540 /* libz.dylib */; };
+		4E3DE2731A77E4AA009BE540 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E3DE2721A77E4AA009BE540 /* MapKit.framework */; };
+		4E3DE2751A77E4B4009BE540 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E3DE2741A77E4B4009BE540 /* Security.framework */; };
+		4E3DE2841A77E6AA009BE540 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E3DE2781A77E6AA009BE540 /* Common.framework */; };
+		4E3DE2851A77E6AA009BE540 /* ContextCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E3DE27A1A77E6AA009BE540 /* ContextCore.framework */; };
+		4E3DE2861A77E6AA009BE540 /* ContextLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E3DE27C1A77E6AA009BE540 /* ContextLocation.framework */; };
+		4E3DE2871A77E6AA009BE540 /* DataModels.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4E3DE27E1A77E6AA009BE540 /* DataModels.bundle */; };
+		4E3DE2881A77E6AA009BE540 /* ContextProfiling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E3DE2801A77E6AA009BE540 /* ContextProfiling.framework */; };
+		4E3DE2891A77E6AA009BE540 /* FYX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E3DE2811A77E6AA009BE540 /* FYX.framework */; };
+		4E3DE28A1A77E6AA009BE540 /* NetworkServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E3DE2831A77E6AA009BE540 /* NetworkServices.framework */; };
+		4E3DE28D1A77E78F009BE540 /* UserContext.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E3DE28C1A77E78F009BE540 /* UserContext.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4E0BB8791A76EAEF00225BD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E0BB8541A76EAEE00225BD5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E0BB85B1A76EAEE00225BD5;
+			remoteInfo = "JCP Find Deals";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4E0BB85C1A76EAEE00225BD5 /* JCP Find Deals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JCP Find Deals.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E0BB8601A76EAEE00225BD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E0BB8611A76EAEE00225BD5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4E0BB8631A76EAEE00225BD5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4E0BB8641A76EAEE00225BD5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4E0BB8671A76EAEE00225BD5 /* JCP_Find_Deals.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JCP_Find_Deals.xcdatamodel; sourceTree = "<group>"; };
+		4E0BB86D1A76EAEF00225BD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/JCPMain.storyboard; sourceTree = "<group>"; };
+		4E0BB86F1A76EAEF00225BD5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4E0BB8721A76EAEF00225BD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		4E0BB8781A76EAEF00225BD5 /* JCP Find DealsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "JCP Find DealsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E0BB87D1A76EAEF00225BD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E0BB87E1A76EAEF00225BD5 /* JCP_Find_DealsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCP_Find_DealsTests.m; sourceTree = "<group>"; };
+		4E0BB8961A772AA100225BD5 /* JCPTableImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCPTableImageCell.h; sourceTree = "<group>"; };
+		4E0BB8971A772AA100225BD5 /* JCPTableImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCPTableImageCell.m; sourceTree = "<group>"; };
+		4E0BB89B1A772AB900225BD5 /* JCPTableFeatureCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCPTableFeatureCell.h; sourceTree = "<group>"; };
+		4E0BB89C1A772AB900225BD5 /* JCPTableFeatureCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCPTableFeatureCell.m; sourceTree = "<group>"; };
+		4E0BB8A01A77477900225BD5 /* JCPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCPViewController.h; sourceTree = "<group>"; };
+		4E0BB8A11A77477900225BD5 /* JCPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCPViewController.m; sourceTree = "<group>"; };
+		4E0BB8A51A775DF700225BD5 /* jcpenney_store.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jcpenney_store.jpg; sourceTree = "<group>"; };
+		4E0BB8A71A77BEFE00225BD5 /* JCPTableSetStoreCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCPTableSetStoreCell.h; sourceTree = "<group>"; };
+		4E0BB8A81A77BEFE00225BD5 /* JCPTableSetStoreCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCPTableSetStoreCell.m; sourceTree = "<group>"; };
+		4E3DE26A1A77E480009BE540 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		4E3DE26C1A77E487009BE540 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		4E3DE26E1A77E497009BE540 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		4E3DE2701A77E4A2009BE540 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		4E3DE2721A77E4AA009BE540 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		4E3DE2741A77E4B4009BE540 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		4E3DE2781A77E6AA009BE540 /* Common.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Common.framework; sourceTree = "<group>"; };
+		4E3DE27A1A77E6AA009BE540 /* ContextCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ContextCore.framework; sourceTree = "<group>"; };
+		4E3DE27C1A77E6AA009BE540 /* ContextLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ContextLocation.framework; sourceTree = "<group>"; };
+		4E3DE27E1A77E6AA009BE540 /* DataModels.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DataModels.bundle; sourceTree = "<group>"; };
+		4E3DE2801A77E6AA009BE540 /* ContextProfiling.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ContextProfiling.framework; sourceTree = "<group>"; };
+		4E3DE2811A77E6AA009BE540 /* FYX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FYX.framework; sourceTree = "<group>"; };
+		4E3DE2831A77E6AA009BE540 /* NetworkServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NetworkServices.framework; sourceTree = "<group>"; };
+		4E3DE28C1A77E78F009BE540 /* UserContext.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UserContext.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4E0BB8591A76EAEE00225BD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E3DE2751A77E4B4009BE540 /* Security.framework in Frameworks */,
+				4E3DE2731A77E4AA009BE540 /* MapKit.framework in Frameworks */,
+				4E3DE2891A77E6AA009BE540 /* FYX.framework in Frameworks */,
+				4E3DE2711A77E4A2009BE540 /* libz.dylib in Frameworks */,
+				4E3DE2881A77E6AA009BE540 /* ContextProfiling.framework in Frameworks */,
+				4E3DE26F1A77E497009BE540 /* CoreData.framework in Frameworks */,
+				4E3DE26D1A77E487009BE540 /* CoreLocation.framework in Frameworks */,
+				4E3DE28A1A77E6AA009BE540 /* NetworkServices.framework in Frameworks */,
+				4E3DE2841A77E6AA009BE540 /* Common.framework in Frameworks */,
+				4E3DE2861A77E6AA009BE540 /* ContextLocation.framework in Frameworks */,
+				4E3DE26B1A77E480009BE540 /* CoreBluetooth.framework in Frameworks */,
+				4E3DE2851A77E6AA009BE540 /* ContextCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E0BB8751A76EAEF00225BD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4E0BB8531A76EAEE00225BD5 = {
+			isa = PBXGroup;
+			children = (
+				4E3DE2761A77E51F009BE540 /* Libraries */,
+				4E0BB85E1A76EAEE00225BD5 /* JCP Find Deals */,
+				4E0BB87B1A76EAEF00225BD5 /* JCP Find DealsTests */,
+				4E0BB85D1A76EAEE00225BD5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4E0BB85D1A76EAEE00225BD5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4E0BB85C1A76EAEE00225BD5 /* JCP Find Deals.app */,
+				4E0BB8781A76EAEF00225BD5 /* JCP Find DealsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4E0BB85E1A76EAEE00225BD5 /* JCP Find Deals */ = {
+			isa = PBXGroup;
+			children = (
+				4E0BB8A31A775DF700225BD5 /* Resources */,
+				4E0BB88F1A77299400225BD5 /* MainTableView */,
+				4E0BB8891A76F07100225BD5 /* SavingsStacker */,
+				4E0BB88A1A76F07100225BD5 /* ProductScanner */,
+				4E0BB88B1A76F07100225BD5 /* DealsFinder */,
+				4E0BB8631A76EAEE00225BD5 /* AppDelegate.h */,
+				4E0BB8641A76EAEE00225BD5 /* AppDelegate.m */,
+				4E0BB86C1A76EAEF00225BD5 /* JCPMain.storyboard */,
+				4E0BB86F1A76EAEF00225BD5 /* Images.xcassets */,
+				4E0BB8711A76EAEF00225BD5 /* LaunchScreen.xib */,
+				4E0BB8661A76EAEE00225BD5 /* JCP_Find_Deals.xcdatamodeld */,
+				4E0BB85F1A76EAEE00225BD5 /* Supporting Files */,
+				4E0BB8A01A77477900225BD5 /* JCPViewController.h */,
+				4E0BB8A11A77477900225BD5 /* JCPViewController.m */,
+			);
+			path = "JCP Find Deals";
+			sourceTree = "<group>";
+		};
+		4E0BB85F1A76EAEE00225BD5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4E0BB8601A76EAEE00225BD5 /* Info.plist */,
+				4E0BB8611A76EAEE00225BD5 /* main.m */,
+				4E3DE28C1A77E78F009BE540 /* UserContext.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4E0BB87B1A76EAEF00225BD5 /* JCP Find DealsTests */ = {
+			isa = PBXGroup;
+			children = (
+				4E0BB87E1A76EAEF00225BD5 /* JCP_Find_DealsTests.m */,
+				4E0BB87C1A76EAEF00225BD5 /* Supporting Files */,
+			);
+			path = "JCP Find DealsTests";
+			sourceTree = "<group>";
+		};
+		4E0BB87C1A76EAEF00225BD5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4E0BB87D1A76EAEF00225BD5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4E0BB8891A76F07100225BD5 /* SavingsStacker */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SavingsStacker;
+			sourceTree = "<group>";
+		};
+		4E0BB88A1A76F07100225BD5 /* ProductScanner */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ProductScanner;
+			sourceTree = "<group>";
+		};
+		4E0BB88B1A76F07100225BD5 /* DealsFinder */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DealsFinder;
+			sourceTree = "<group>";
+		};
+		4E0BB88F1A77299400225BD5 /* MainTableView */ = {
+			isa = PBXGroup;
+			children = (
+				4E0BB8961A772AA100225BD5 /* JCPTableImageCell.h */,
+				4E0BB8971A772AA100225BD5 /* JCPTableImageCell.m */,
+				4E0BB89B1A772AB900225BD5 /* JCPTableFeatureCell.h */,
+				4E0BB89C1A772AB900225BD5 /* JCPTableFeatureCell.m */,
+				4E0BB8A71A77BEFE00225BD5 /* JCPTableSetStoreCell.h */,
+				4E0BB8A81A77BEFE00225BD5 /* JCPTableSetStoreCell.m */,
+			);
+			path = MainTableView;
+			sourceTree = "<group>";
+		};
+		4E0BB8A31A775DF700225BD5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4E0BB8A41A775DF700225BD5 /* Assets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4E0BB8A41A775DF700225BD5 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				4E0BB8A51A775DF700225BD5 /* jcpenney_store.jpg */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		4E3DE2761A77E51F009BE540 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				4E3DE2771A77E6AA009BE540 /* Common.embeddedframework */,
+				4E3DE2791A77E6AA009BE540 /* ContextCore.embeddedframework */,
+				4E3DE27B1A77E6AA009BE540 /* ContextLocation.embeddedframework */,
+				4E3DE27F1A77E6AA009BE540 /* ContextProfiling.embeddedframework */,
+				4E3DE2811A77E6AA009BE540 /* FYX.framework */,
+				4E3DE2821A77E6AA009BE540 /* NetworkServices.embeddedframework */,
+				4E3DE2741A77E4B4009BE540 /* Security.framework */,
+				4E3DE2721A77E4AA009BE540 /* MapKit.framework */,
+				4E3DE2701A77E4A2009BE540 /* libz.dylib */,
+				4E3DE26E1A77E497009BE540 /* CoreData.framework */,
+				4E3DE26C1A77E487009BE540 /* CoreLocation.framework */,
+				4E3DE26A1A77E480009BE540 /* CoreBluetooth.framework */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		4E3DE2771A77E6AA009BE540 /* Common.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				4E3DE2781A77E6AA009BE540 /* Common.framework */,
+			);
+			path = Common.embeddedframework;
+			sourceTree = "<group>";
+		};
+		4E3DE2791A77E6AA009BE540 /* ContextCore.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				4E3DE27A1A77E6AA009BE540 /* ContextCore.framework */,
+			);
+			path = ContextCore.embeddedframework;
+			sourceTree = "<group>";
+		};
+		4E3DE27B1A77E6AA009BE540 /* ContextLocation.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				4E3DE27C1A77E6AA009BE540 /* ContextLocation.framework */,
+				4E3DE27D1A77E6AA009BE540 /* Resources */,
+			);
+			path = ContextLocation.embeddedframework;
+			sourceTree = "<group>";
+		};
+		4E3DE27D1A77E6AA009BE540 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4E3DE27E1A77E6AA009BE540 /* DataModels.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4E3DE27F1A77E6AA009BE540 /* ContextProfiling.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				4E3DE2801A77E6AA009BE540 /* ContextProfiling.framework */,
+			);
+			path = ContextProfiling.embeddedframework;
+			sourceTree = "<group>";
+		};
+		4E3DE2821A77E6AA009BE540 /* NetworkServices.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				4E3DE2831A77E6AA009BE540 /* NetworkServices.framework */,
+			);
+			path = NetworkServices.embeddedframework;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4E0BB85B1A76EAEE00225BD5 /* JCP Find Deals */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E0BB8821A76EAEF00225BD5 /* Build configuration list for PBXNativeTarget "JCP Find Deals" */;
+			buildPhases = (
+				4E0BB8581A76EAEE00225BD5 /* Sources */,
+				4E0BB8591A76EAEE00225BD5 /* Frameworks */,
+				4E0BB85A1A76EAEE00225BD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "JCP Find Deals";
+			productName = "JCP Find Deals";
+			productReference = 4E0BB85C1A76EAEE00225BD5 /* JCP Find Deals.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4E0BB8771A76EAEF00225BD5 /* JCP Find DealsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E0BB8851A76EAEF00225BD5 /* Build configuration list for PBXNativeTarget "JCP Find DealsTests" */;
+			buildPhases = (
+				4E0BB8741A76EAEF00225BD5 /* Sources */,
+				4E0BB8751A76EAEF00225BD5 /* Frameworks */,
+				4E0BB8761A76EAEF00225BD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4E0BB87A1A76EAEF00225BD5 /* PBXTargetDependency */,
+			);
+			name = "JCP Find DealsTests";
+			productName = "JCP Find DealsTests";
+			productReference = 4E0BB8781A76EAEF00225BD5 /* JCP Find DealsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4E0BB8541A76EAEE00225BD5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = JCPenney;
+				TargetAttributes = {
+					4E0BB85B1A76EAEE00225BD5 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					4E0BB8771A76EAEF00225BD5 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 4E0BB85B1A76EAEE00225BD5;
+					};
+				};
+			};
+			buildConfigurationList = 4E0BB8571A76EAEE00225BD5 /* Build configuration list for PBXProject "JCP Find Deals" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4E0BB8531A76EAEE00225BD5;
+			productRefGroup = 4E0BB85D1A76EAEE00225BD5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4E0BB85B1A76EAEE00225BD5 /* JCP Find Deals */,
+				4E0BB8771A76EAEF00225BD5 /* JCP Find DealsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4E0BB85A1A76EAEE00225BD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E0BB86E1A76EAEF00225BD5 /* JCPMain.storyboard in Resources */,
+				4E3DE28D1A77E78F009BE540 /* UserContext.plist in Resources */,
+				4E0BB8A61A775DF700225BD5 /* jcpenney_store.jpg in Resources */,
+				4E0BB8731A76EAEF00225BD5 /* LaunchScreen.xib in Resources */,
+				4E3DE2871A77E6AA009BE540 /* DataModels.bundle in Resources */,
+				4E0BB8701A76EAEF00225BD5 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E0BB8761A76EAEF00225BD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4E0BB8581A76EAEE00225BD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E0BB8651A76EAEE00225BD5 /* AppDelegate.m in Sources */,
+				4E0BB8681A76EAEE00225BD5 /* JCP_Find_Deals.xcdatamodeld in Sources */,
+				4E0BB8991A772AA100225BD5 /* JCPTableImageCell.m in Sources */,
+				4E0BB8621A76EAEE00225BD5 /* main.m in Sources */,
+				4E0BB89E1A772AB900225BD5 /* JCPTableFeatureCell.m in Sources */,
+				4E0BB8A91A77BEFE00225BD5 /* JCPTableSetStoreCell.m in Sources */,
+				4E0BB8A21A77477900225BD5 /* JCPViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E0BB8741A76EAEF00225BD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E0BB87F1A76EAEF00225BD5 /* JCP_Find_DealsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4E0BB87A1A76EAEF00225BD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4E0BB85B1A76EAEE00225BD5 /* JCP Find Deals */;
+			targetProxy = 4E0BB8791A76EAEF00225BD5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4E0BB86C1A76EAEF00225BD5 /* JCPMain.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4E0BB86D1A76EAEF00225BD5 /* Base */,
+			);
+			name = JCPMain.storyboard;
+			sourceTree = "<group>";
+		};
+		4E0BB8711A76EAEF00225BD5 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4E0BB8721A76EAEF00225BD5 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4E0BB8801A76EAEF00225BD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4E0BB8811A76EAEF00225BD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4E0BB8831A76EAEF00225BD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Maretska Kirana (5J767UXN8C)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Common.embeddedframework",
+					"$(PROJECT_DIR)/ContextCore.embeddedframework",
+					"$(PROJECT_DIR)/ContextLocation.embeddedframework",
+					"$(PROJECT_DIR)/ContextProfiling.embeddedframework",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/NetworkServices.embeddedframework",
+				);
+				INFOPLIST_FILE = "JCP Find Deals/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8188f3ec-da1b-4789-a7b7-18180c4c84ff";
+			};
+			name = Debug;
+		};
+		4E0BB8841A76EAEF00225BD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Maretska Kirana (5J767UXN8C)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Common.embeddedframework",
+					"$(PROJECT_DIR)/ContextCore.embeddedframework",
+					"$(PROJECT_DIR)/ContextLocation.embeddedframework",
+					"$(PROJECT_DIR)/ContextProfiling.embeddedframework",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/NetworkServices.embeddedframework",
+				);
+				INFOPLIST_FILE = "JCP Find Deals/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8188f3ec-da1b-4789-a7b7-18180c4c84ff";
+			};
+			name = Release;
+		};
+		4E0BB8861A76EAEF00225BD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "JCP Find DealsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JCP Find Deals.app/JCP Find Deals";
+			};
+			name = Debug;
+		};
+		4E0BB8871A76EAEF00225BD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "JCP Find DealsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JCP Find Deals.app/JCP Find Deals";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4E0BB8571A76EAEE00225BD5 /* Build configuration list for PBXProject "JCP Find Deals" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E0BB8801A76EAEF00225BD5 /* Debug */,
+				4E0BB8811A76EAEF00225BD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E0BB8821A76EAEF00225BD5 /* Build configuration list for PBXNativeTarget "JCP Find Deals" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E0BB8831A76EAEF00225BD5 /* Debug */,
+				4E0BB8841A76EAEF00225BD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E0BB8851A76EAEF00225BD5 /* Build configuration list for PBXNativeTarget "JCP Find DealsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E0BB8861A76EAEF00225BD5 /* Debug */,
+				4E0BB8871A76EAEF00225BD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4E0BB8661A76EAEE00225BD5 /* JCP_Find_Deals.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4E0BB8671A76EAEE00225BD5 /* JCP_Find_Deals.xcdatamodel */,
+			);
+			currentVersion = 4E0BB8671A76EAEE00225BD5 /* JCP_Find_Deals.xcdatamodel */;
+			path = JCP_Find_Deals.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4E0BB8541A76EAEE00225BD5 /* Project object */;
+}
